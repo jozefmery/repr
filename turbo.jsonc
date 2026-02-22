@@ -1,0 +1,23 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "cacheDir": ".turbo/cache",
+  "concurrency": "100%",
+  "daemon": true,
+  "envMode": "strict",
+  "globalPassThroughEnv": [],
+  "noUpdateNotifier": false,
+  "remoteCache": {
+    "enabled": true
+  },
+  "tasks": {
+    "//#root:asd":{
+      "cache": true,
+      "outputs": ["asd.txt"]
+    },
+    "asd":{
+      "cache": true,
+      "outputs": ["asd.txt"]
+    }
+  },
+  "ui": "tui"
+}
